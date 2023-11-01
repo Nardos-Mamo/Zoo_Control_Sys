@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="gate.css">
+    <title>Zoo Gate Locks</title>
+</head>
+<body>
+    <div class="navbar">
+        <a id="home-link" href="Home.html">
+            <i class="fas fa-home"></i> Home
+        </a>
+    </div>
+    <div class="big-container">
+        <p>GATES</p>
+
+        <div class="pen-container">
+            <div class="left-pens">
+                <div class="pen1"></div>
+                <div class="lock-toggle-container">
+                    <label class="switch">
+                        <input type="checkbox" id="pen1LockToggle" >
+                        <span class="slider round"></span>
+                        <i class="lock-icon fa fa-lock"></i>
+                        <i class="unlock-icon fa fa-unlock" ></i>
+                    </label>
+                </div>
+
+                <div class="pen2">  </div>
+                <div class="lock-toggle-container">
+                    <label class="switch">
+                        <input type="checkbox" id="pen2LockToggle">
+                        <span class="slider round"></span>
+                        <i class="lock-icon fa fa-lock"></i>
+                        <i class="unlock-icon fa fa-unlock" ></i>
+                    </label>
+                </div>
+            </div>
+            <div class="right-pens">
+                <div class="pen3">  </div>
+                    
+                
+                <div class="lock-toggle-container">
+                    <label class="switch">
+                        <input type="checkbox" id="pen2LockToggle">
+                        <span class="slider round"></span>
+                        <i class="lock-icon fa fa-lock"></i>
+                        <i class="unlock-icon fa fa-unlock"></i>
+                    </label>
+                </div>              
+                <div class="pen4">   </div>                
+                <div class="lock-toggle-container">
+                    <label class="switch">
+                        <input type="checkbox" id="pen2LockToggle">
+                        <span class="slider round"></span>
+                        <i class="lock-icon fa fa-lock"></i>
+                        <i class="unlock-icon fa fa-unlock" ></i>
+                    </label>
+                </div>
+               
+        </div>
+        <div class="master-toggle-button">
+            <label class="master-toggle">
+                <input id="lockUnlockAllSwitch" type="checkbox">
+                <span class="master-slider round"></span>
+                <label class="master-toggle-label master-toggle-label-inner" id="lockAllLabel">Lock All</label>
+            </label>
+            <div id="unlockAllContainer" style="display: none;">
+                <label class="master-toggle-label master-toggle-label-inner1" id="unlockAllLabel">UnLock All</label>
+            </div>
+        </div>
+    </div>
+    <script src="gate.js"></script>
+</body>
+</html>

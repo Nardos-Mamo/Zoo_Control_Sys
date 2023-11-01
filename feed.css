@@ -1,0 +1,133 @@
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(another.webp);
+    background-size: cover;
+    filter: blur(3px); 
+    z-index: -1; 
+    opacity: 1;
+}
+.navbar{
+    background-color:rgba(83, 79, 39, 0.9);
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.pen-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-pens, .right-pens {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: -30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.left-pens {
+    margin-right: 20px; 
+}
+
+.right-pens {
+    margin-left: 20px; 
+}
+
+.pen1, .pen2, .pen3, .pen4 {
+    background-image: url(tiger.jpg); 
+    border-radius: 10px;
+    background-color: #f0f0f0; 
+    width: 200px;
+    height: 70px;
+    padding: 30px;
+    text-align: center;
+    margin: 20px;
+    background-size: cover;
+    border: 3px solid #0e0e0e;
+}
+.pen1, .pen2 {
+    margin-bottom: 95px; 
+}
+
+.pen3, .pen4 {
+    margin-bottom: 95px; 
+}
+.pen2{
+    background-image: url(giraffes.jpg); 
+    background-size: cover;
+}
+.pen3{
+    background-image: url(lion.jpg); 
+    background-size: cover;
+}
+.pen4{
+    background-image: url(mokey.jpeg); 
+    background-size: cover;
+}
+.big-container {
+    background-color: rgba(14, 28, 19, 0.8);
+    padding: 10px;
+    border: 7px solid #0e0e0e;
+    width: 700px;
+    height: 520px; 
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-top: 4%;
+}
+p1 {
+    margin-top: -5px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 3px;
+}
+p {
+    margin-top: -5px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    border: 4px solid rgba(20, 20, 20, 0.9);
+    background-color:rgba(70, 67, 33, 0.9);
+    padding: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+ .feed-options {
+   margin-top: -85px;
+   margin-left: -50px;
+   margin-bottom: 15px;
+   border: 3px solid rgba(20, 20, 20, 0.9);
+   background-color:rgba(33, 56, 42, 0.9);
+   color: white;
+} 
+#check-mark {
+    color: green;
+    display: none;
+}
+#pen1-feed-button,#pen2-feed-button,#pen3-feed-button,#pen4-feed-button{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}

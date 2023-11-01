@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zone Map</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="sprinkler.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a id="home-link" href="Home.html">
+            <i class="fas fa-home"></i> Home
+        </a>
+    </div>
+
+    <div class="big-container">
+        <h4>ZONES</h4>
+        <div class="map-container">
+            <div class="zone" data-zone="zone1" style="top: 50px; left: 50px; width: 200px; height: 100px;">
+                <div class="status-button" id="zone1-status-button"></div>
+                zone 1
+            </div>
+            <div class="zone" data-zone="zone2" style="top: 150px; left: 300px; width: 150px; height: 150px;">
+                <div class="status-button" id="zone2-status-button"></div>
+                zone 2
+            </div>
+            <div class="zone" data-zone="zone3" style="top: 20px; left: 300px; width: 100px; height: 100px;">
+                <div class="status-button" id="zone3-status-button"></div>
+                zone 3
+            </div>
+            
+            <div class="zone" data-zone="zone4" style="top: 200px; left: 100px; width: 150px; height: 100px;">
+                <div class="status-button" id="zone4-status-button"></div>
+                zone 4
+            </div>
+        </div>
+    </div>
+
+    <div class="small-container">
+        <div class="activation-container">
+            <button class="zone-button" id="zone1" onclick="toggleSelection('zone1')">Zone 1</button>
+            <button class="zone-button" id="zone2" onclick="toggleSelection('zone2')">Zone 2</button>
+            <button class="zone-button" id="zone3" onclick="toggleSelection('zone3')">Zone 3</button>
+            <button class="zone-button" id="zone4" onclick="toggleSelection('zone4')">Zone 4</button>
+            <p class="name" id="name1">Activate Sprinkler</p>
+        </div>
+    </div>
+
+    <p class="schedule" id="schedule">Schedule</p>
+    <div id="feed-options">
+        <select id="routine-select">
+            <option value="1">For 1 Hour</option>
+            <option value="3">For 3 Hours</option>
+            <option value="5">For 5 Hours</option>
+        </select>
+        <button onclick="activateRoutine()">Activate</button>
+        <span id="check-mark">✓</span>
+    </div>
+
+    <script
+       src="sprinkler.js">
+    </script>
+</body>
+</html>
